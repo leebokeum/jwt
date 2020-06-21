@@ -1,0 +1,38 @@
+
+### 회원가입
+POST http://localhost:3000/v1/signup?password=test1234&userName=leebokeum@hanmail.net&nickName=leebokeum
+Accept: */*
+Cache-Control: no-cache
+###
+
+### 로그인
+POST http://localhost:3000/v1/signin?password=test1234&userName=leebokeum@hanmail.net
+Accept: */*
+Cache-Control: no-cache
+###
+
+### 회원정보조회
+GET http://localhost:8080/v1/users
+Accept: */*
+Cache-Control: no-cache
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5MjYzNTY4OCwiZXhwIjoxNTkyNjM5Mjg4fQ.CsZY6Tyb7ORTlowpSliqxwfN3PPm1php4KNMrdYHL-Q
+
+###
+
+### 회원정보조회
+GET http://localhost:8080/v1/user
+Accept: */*
+Cache-Control: no-cache
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5MjYzNTUyMCwiZXhwIjoxNTkyNjM5MTIwfQ.EeSDlD5_CA6zlTeo8sfe5RH2s7O78X092EpzORsjJow
+
+###
+
+### 회원정보수정
+PUT http://localhost:8080/v1/user?name=leebokeummodify
+Accept: */*
+Cache-Control: no-cache
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5MjYzNjMxMiwiZXhwIjoxNTkyNjM5OTEyfQ.QhthuQv3ZgQB6TXi86O5r1CI-SOpnLSaQAJ4PEMZElw
+
+###
+
+
